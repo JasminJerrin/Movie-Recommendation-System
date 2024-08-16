@@ -9,3 +9,40 @@ Technologies Used:
 • Python (NumPy, pandas)
 • Flask (for API development)
 • JSON (for data exchange)
+
+Run command: python main.py
+Postman API call 
+Type : POST 
+URL:http://localhost:5000/recommend
+Body(RAW -Json format):
+{
+    "user_id": 100,
+    "user_data": [
+        {
+            "movie_id": 1,
+            "rating": 5
+        },
+        {
+            "movie_id": 2,
+            "rating": 4
+        }
+    ],
+    "movies": [
+        {
+            "movie_id": 1,
+            "title": "Movie A"
+        },
+        {
+            "movie_id": 2,
+            "title": "Movie B"
+        },
+        {
+            "movie_id": 3,
+            "title": "Movie C"
+        }
+    ],
+    "num_recommendations": 5
+}
+
+
+
